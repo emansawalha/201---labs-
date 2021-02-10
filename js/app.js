@@ -1,5 +1,5 @@
 'use strict';
-
+let score =0 ; 
 //Welcome Massage
 let userN = prompt('Hello, What is Your Name ') ;
 console.log(userN);
@@ -31,6 +31,7 @@ let fName = prompt('Is My First Name  Eman ?');
 if( fName.toUpperCase() ===userinput3 || fName.toUpperCase() === userinput4){
   alert( 'My First Name is Eman ' );
   console.log('EMAN');
+  score = score+1;
 }else {
   alert('please Read About me ') ;
   console.log('no');
@@ -44,6 +45,7 @@ let cityname = prompt('Do I live in Irbid  ?');
 if( cityname.toLowerCase() === userinput5 || cityname.toLowerCase() === userinput6){
   alert( 'I Live in irbid  ' );
   console.log('irbid');
+  score = score+1;
 }else {
   alert('please Read About me ') ;
   console.log('no');
@@ -57,6 +59,7 @@ let degree = prompt('Is My Degree Is M.Sc  ?');
 if( degree.toLowerCase()=== userinput7 || degree.toLowerCase()=== userinput8){
   alert( 'I Have M.Sc ' );
   console.log('M.Sc') ;
+  score = score+1;
 }else {
   alert('please Read About me ') ;
   console.log('no');
@@ -70,7 +73,7 @@ let LTUc = prompt(' do i attend to LTUC -ASAC ?')
 if( degree.toLowerCase()=== userinput9 || degree.toLowerCase() === userinput10){
   alert( 'iam LTUC - ASAC Student  ' );
   console.log('LTUC') ;
-  
+  score = score+1;
 }else {
   alert('please Read About me ') ;
   console.log('no')
@@ -95,6 +98,7 @@ for(i =1 ; i<=4 ; i=i+1){
   if (question1 === correct){
     alert('I have '+correct +':)');
     console.log(question1);
+    score = score+1;
     break;
   }
   else {
@@ -126,11 +130,11 @@ Consider using a loop of some sort for this question.
 
 //Question No.7*/
 
-let score =0;
+
 let Arrcourse = ['html','js','css','java','python'];
 
 
-//let found = false;
+let found = false;
 for( i = 0 ; i<=6 ; i++){
   let userAns = prompt('what is the most PL used to build webpages?');
   for (let j=0 ; j<= Arrcourse.length; j++){
@@ -139,14 +143,14 @@ for( i = 0 ; i<=6 ; i++){
       alert ('yes');
       console.log(userAns);
       score = score+1;
-// found = true;
+      found = true;
       break;
     }
   }
-//if(found === true){
-//console.log('n');
-// break;
-// }
+if(found === true){
+console.log('n');
+ break;
+ }
 }
 alert('these are some PL using to in webdevelopment: '+ Arrcourse);
 alert('Your score is '+ '  '+ score + 'out of 7');
