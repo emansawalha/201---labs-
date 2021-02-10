@@ -131,6 +131,7 @@ function myAge() {
     alert('My age is 34')
   }
 }
+
 myAge(user1);
 
 
