@@ -47,3 +47,14 @@ h2{
     
 }
 
+ol {
+    list-style-type:lower-greek;
+    padding-left: 10%;
+    text-align:justify;
+    text-decoration: blueviolet;
+    font-family:cursive ;
+
+
+
+}
+
