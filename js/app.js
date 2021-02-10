@@ -1,6 +1,7 @@
 'use strict';
 let score =0 ; 
 //Welcome Massage
+
 let userN = prompt('Hello, What is Your Name ') ;
 console.log(userN);
 alert(`U R Welcome ${userN} to my Website :)`);
@@ -12,7 +13,7 @@ document.write(`Hello ${userN} `);
 let userinput1='yes' ;
 let userinput2 = 'y';
 let userName = prompt('Do You know Me  ?') ;
-function meName(){
+function meNam(){
 if(userName.toLowerCase() === userinput1 || userName.toLowerCase() === userinput2 )
 {
   alert('Hmmmmm U R My Friend :)') ;
@@ -22,7 +23,7 @@ if(userName.toLowerCase() === userinput1 || userName.toLowerCase() === userinput
   alert('Please Read more about Me :( ') ;
 }
 }
-meName(userName);
+meNam(userName);
 
 
 
@@ -32,7 +33,7 @@ let userinput3='YES' ;
 let userinput4 = 'Y';
 let input ='eman';
 let fName = prompt('Is My First Name  Eman ?');
-function firstName(){
+function firstNam(){
 if( fName.toUpperCase() ===userinput3 || fName.toUpperCase() === userinput4){
   alert( 'My First Name is Eman ' );
   console.log('EMAN');
@@ -42,7 +43,7 @@ if( fName.toUpperCase() ===userinput3 || fName.toUpperCase() === userinput4){
   console.log('no');
 }
 }
-firstName(fName);
+firstNam(fName);
 
 
 
@@ -50,7 +51,7 @@ firstName(fName);
 let userinput5='yes' ;
 let userinput6 = 'y';
 let cityname = prompt('Do I live in Irbid  ?');
-function homeTown(){
+function homTown(){
 if( cityname.toLowerCase() === userinput5 || cityname.toLowerCase() === userinput6){
   alert( 'I Live in irbid  ' );
   console.log('irbid');
@@ -60,14 +61,14 @@ if( cityname.toLowerCase() === userinput5 || cityname.toLowerCase() === userinpu
   console.log('no');
 }
 }
-homeTown(cityname);
+homTown(cityname);
 
 
 // this is fourth prompt about my degree
 let userinput7='yes' ;
 let userinput8 = 'y';
 let degree = prompt('Is My Degree Is M.Sc  ?');
-function myDegree(){
+function myDegre(){
 if( degree.toLowerCase()=== userinput7 || degree.toLowerCase()=== userinput8){
   alert( 'I Have M.Sc ' );
   console.log('M.Sc') ;
@@ -77,7 +78,7 @@ if( degree.toLowerCase()=== userinput7 || degree.toLowerCase()=== userinput8){
   console.log('no');
 }
 }
-myDegree(degree);
+myDegre(degree);
 
 
 
@@ -85,7 +86,7 @@ myDegree(degree);
 let userinput9='yes' ;
 let userinput10 = 'y';
 let LTUc = prompt(' do i attend to LTUC -ASAC ?')
-function studentL(){
+function studentLt(){
 if( degree.toLowerCase()=== userinput9 || degree.toLowerCase() === userinput10){
   score = score+1;
   alert( 'iam LTUC - ASAC Student  ' );
@@ -95,7 +96,7 @@ if( degree.toLowerCase()=== userinput9 || degree.toLowerCase() === userinput10){
   console.log('no');
 }
 }
-studentL(LTUc);
+studentLt(LTUc);
 
 
 let aboutMe= alert(`U R Most Welcom ${userN},My Name is Eman, i live in irbid, i have M.Sc degree and i am student @ LTUC _ ASAC `) ;
@@ -108,7 +109,7 @@ After all attempts have been exhausted, tell the user the correct answer. Consid
 
 // Question No.1:what is my age ?
 let user1 = prompt('guess what is my age  ?');
-function myAge() {
+function myAg() {
   parseInt(user1);
   if (user1 === 34) {
     score++;
@@ -132,15 +133,15 @@ function myAge() {
   }
 }
 
-myAge(user1);
+myAg(user1);
 
 
 
 
 
-  /* let question1 = prompt('what is my age ?');
+  /*let question1 = prompt('what is my age ?');
   function myAge(){
-  question1 = parseInt(question1);
+  /*question1 = parseInt(question1);
 
   if (question1 === 34){
     score++;
@@ -190,7 +191,7 @@ Consider using a loop of some sort for this question.
 
 
 let Arrcourse = ['html','js','css','java','python'];
-function PLanguage(){
+function PrLanguage(){
 let found = false;
 for( let i = 0 ; i<=6 ; i++){
   let userAns = prompt('what is the most PL used to build webpages?');
@@ -209,7 +210,7 @@ console.log('n');
  break;
  }
 }
-}PLanguage(Arrcourse);
+}PrLanguage(Arrcourse);
 
 alert('these are some PL using to in webdevelopment: '+ Arrcourse);
 alert('Your score is '+ '  '+ score + 'out of 7');
