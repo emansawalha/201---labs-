@@ -3,6 +3,14 @@ body{
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
     url('https://www.indezine.com/powerpoint/freeppt/templates/t_ind_4297a.jpg')
 }
+.fixed{
+    
+    background-color:rgb(248, 94, 94);
+    position: fixed;
+    top: 20px;
+    left: 2px;
+}
+
 header{
     font-size:100px;
     font-weight: bolder;
@@ -25,9 +33,9 @@ article p{
 }
 img {
     
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display:inline;
+    margin-left: 50%;
+    margin-right: 50%;
     width: 10%;
 
 }
@@ -39,22 +47,52 @@ div li {
 }
 
 h2{
-    text-align: center;
+    text-align:left;
     text-anchor: start;
     font-weight: bold;
   color:rgb(48, 4, 48);
   font-size: 32px;
     
 }
-
 ol {
+   
     list-style-type:lower-greek;
     padding-left: 10%;
     text-align:justify;
     text-decoration: blueviolet;
     font-family:cursive ;
 
+}
 
 
+div{
+    display: inline-block;
+}
+
+span{ 
+    border: 5px ;
+    border-color: rgb(42, 140, 165);
+    border-radius: 2px;
+    border-style:solid;
+    
+}
+.relative{
+    background-color: rgb(233, 10, 10);
+    position: relative;
+}
+.foot1 {
+    display: inline;
+    padding-left: 2%;
+}
+
+.absolute{
+    background-color: rgb(255, 102, 0);
+    position: absolute;
+    top:10;
+    left: 80px;
+}
+ul li {
+    list-style-type:square;
+    padding-left: 20px;
 }
 
